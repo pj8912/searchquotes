@@ -1,0 +1,21 @@
+{%extends 'wrapper.html' %}
+    
+{%block body%}
+	<div class="container">
+
+	<div class="mt-5 m-0">
+		<h1>SearchQuotes</h1>
+
+    <form action="/searchquotes" method="post">
+        <input type="text" id="searchQuery" name="q" placeholder="Enter your search query" required>
+        <button type="submit">Search</button>
+    </form>
+   <br>
+   <a href="/uploadsrtfile" style="font-size:12px;text-align:center">Upload .srt file</a>
+
+	</div>
+
+	<hr>
+	</div>
+{%endblock%}
+

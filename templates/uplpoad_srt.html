@@ -1,0 +1,27 @@
+{%extends 'wrapper.html' %}
+    
+{%block body%}
+
+    <div class="container mt-5">
+        <div class="card card-body col-md-4 m-auto mt-5 border-0">
+            <h3>Upload srt file</h3>
+            <form action="/uploadsrt" method="post">
+                <div class="mb-2">
+                    <input type="text" class="form-control" name="source_name" placeholder="Name">
+                </div>
+                <div class="mb-2">
+                    <input type="text" class="form-control" name="source_type" placeholder="Source Type" id="">
+                </div>
+                <div class="mb-2">
+                    <label for="srtfile">.srt file</label>
+                    <input type="file" class="form-control" name="srtfile" id="">
+                </div>
+
+                <div class="d-grid">
+                    <button type="button" class="btn btn-primary btn-sm">Upload</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    {%endblock%}
