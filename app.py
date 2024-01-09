@@ -2,9 +2,9 @@ from flask import Flask, render_template
 import pysrt
 
 
-app = Flask(__name__)
-
-
+app = Flask(__name__, static_folder="static")
+app.config["UPLOAD_FOLDER"] = "static"
+app.use_static_route = True
 
 @app.route("/")
 def home():
